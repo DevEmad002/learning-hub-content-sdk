@@ -1,0 +1,105 @@
+.header {
+  width: 100%;
+  min-height: 170px;
+  background: linear-gradient(90deg, #030707 0%, #06272b 55%, #06383f 100%);
+  color: #ffffff;
+}
+
+.inner {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 44px 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.left,
+.right {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.logoArabic {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.logoEnglish {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.nav a,
+.language {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.outlineButton,
+.loginButton {
+  height: 54px;
+  padding: 0 24px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.outlineButton {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.loginButton {
+  background: #ffffff;
+  color: #000000;
+}
+
+.outlineButton span,
+.loginButton span {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.outlineButton span {
+  background: #ffffff;
+  color: #000000;
+}
+
+.loginButton span {
+  background: #000000;
+  color: #ffffff;
+}
+
+@media (max-width: 900px) {
+  .inner {
+    padding: 28px 24px;
+    flex-direction: column;
+  }
+
+  .nav {
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
