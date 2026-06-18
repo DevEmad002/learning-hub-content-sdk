@@ -103,3 +103,19 @@
     justify-content: center;
   }
 }
+.logoArabicImage {
+  display: block;
+  width: 110px;
+  height: auto;
+}
+
+.logoEnglishImage {
+  display: block;
+  width: 110px;
+  height: auto;
+  margin-top: 8px;
+}
+
+.chevron {
+  margin-left: 6px;
+}
