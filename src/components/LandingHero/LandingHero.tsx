@@ -18,13 +18,25 @@ type LandingHeroProps = {
     CtaLink: LinkField;
     BackgroundImage: ImageField;
   };
+
+  params?: {
+    FieldNames?: string;
+  };
 };
 
 export default function LandingHero(props: LandingHeroProps) {
-  const { fields } = props;
+  const { fields, params } = props;
+
+  const variant = params?.FieldNames || 'Default';
 
   return (
-    <section className={styles.hero}>
+    <section
+      className={[
+        styles.hero,
+        variant === 'Dark' ? styles.dark : '',
+        variant === 'ImageRight' ? styles.imageRight : '',
+      ].join(' ')}
+    >
       <div className={styles.background}>
         <Image field={fields.BackgroundImage} />
       </div>

@@ -1,0 +1,47 @@
+.section {
+  padding: 90px 64px 110px;
+  background: #f2f4f7;
+  text-align: center;
+}
+
+.section h2 {
+  margin: 0;
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.logos {
+  max-width: 920px;
+  margin: 90px auto 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 120px;
+  column-gap: 90px;
+  align-items: center;
+  justify-items: center;
+}
+
+.logoItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoItem img {
+  max-width: 120px;
+  max-height: 90px;
+  object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  .section {
+    padding: 60px 24px 80px;
+  }
+
+  .logos {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 60px;
+    column-gap: 40px;
+  }
+}
